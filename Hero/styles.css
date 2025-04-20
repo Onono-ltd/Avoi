@@ -1,0 +1,259 @@
+:root {
+    --primary-color: #521908;
+    --secondary-color: #BE7E4E;
+    --accent-color: #F9DCB4;
+    --background-color: #F5EAD4;
+    --text-color: #333;
+    --discover-color: #11452c;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+}
+
+@media screen and (max-width : 1024px) {
+    header {
+        background-color: var(--accent-color);
+        height: 90vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .navbar{
+        width: 95%;
+        margin: auto;
+        padding-top: 2rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar img{
+        height: 3rem;
+        width: 3rem;
+    }
+
+    .menu{
+        position: fixed;
+        right: 0;
+        left: 10;
+        bottom: 0;
+        top: 0;
+        background-color: var(--secondary-color);
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 1rem 2rem 2rem;
+        width: 50%;
+        height: 100vh;
+        transform: translateX(200%);
+        transition: transform 0.3s;
+    }
+    
+    .close{
+        width: 3rem;
+        height: 3rem;
+    }
+
+    ul{
+        margin-top: 4rem;
+        font-size: 2rem;
+    }
+
+    li{
+        margin-top: 2rem;
+        list-style: none;
+    }
+
+    li a{
+        text-decoration: none;
+        color: var(--primary-color);
+    }
+    
+    li a:hover {
+        color: var(--accent-color);
+    }
+
+    .menu button{
+        margin-top: 5rem;
+        width: 10rem;
+        height: 3.5rem;
+        color: var(--accent-color);
+        background-color: var(--primary-color);
+        border-radius: 5px;
+        font-size: 1.5rem;
+    }
+
+    .show-menu{
+        transform: translateX(0);
+    }
+    
+    .home{
+        background-image: url(images/Men-Skin1.webp);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 100%;
+        width: 100%;
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header h1{
+        display: none;
+    }
+    
+    header h2{
+        font-size: 2rem;
+        font-family: cursive;
+        margin: 8rem 0 0 2rem;
+    }
+
+    header h3{
+        font-size: 2rem;
+        font-family: cursive;
+        margin: 1rem 0 0 2rem;
+    }
+    
+    header p{
+        font-size: 20px;
+        width: 55%;
+        margin: 1rem 0 0 2rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    header {
+        background-color: var(--background-color);
+        height: 100vh;
+        width: 100vw;
+        padding: 0.5rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0 40px;
+        justify-content: space-between;
+        z-index: 1000;
+        border-radius: 1rem 0 0 1rem;
+    }
+    
+    .logo {
+        font-size: 22px;
+        font-weight: bold;
+        padding: 15px 0;
+        color: var(--primary-color);
+    }
+    
+    .nav-links {
+        padding: 15px 0;
+        list-style: none;
+        display: flex;
+        gap: 40px;
+    }
+    
+    .nav-links li a {
+        text-decoration: none;
+        color: var( --primary-color);
+        font-weight: bolder;
+        transition: 0.3s;
+        font-size: 20px;
+    }
+    
+    .nav-links li a:hover {
+        color: var(--accent-color);
+    }
+    
+    nav button{
+        color: var(--accent-color);
+        background-color: var(--primary-color);
+        width: 8rem;
+        height: 30px;
+        border-radius: 5px;
+        font-size: large;
+    }
+    
+    button:hover{
+        color: var(--background-color);
+        background-color: var(--text-color);
+        cursor: pointer;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    .menu{
+        display: none
+    }
+
+    .home{
+        background-image: url(images/Men-Skin1.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        margin-top: 3rem;
+        position: relative;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    
+    .text{
+        position: absolute;
+        bottom: 0;
+    }
+    
+    header h1{
+        font-size: 4.7rem;
+    }
+
+    header h2, h3{
+        display: none;
+    }
+    
+    .a1{
+        width: fit-content;
+        background-color: var(--background-color);
+        border-radius: 0 1rem 0 0;
+        padding: 1rem 1rem 0 0;
+    }
+    
+    .b{
+        width: fit-content;
+        background-color: var(--background-color);
+        padding: 0 1rem 0 0;
+        border-radius: 0 1rem 0 0;
+    }
+    
+    .c{
+        width: fit-content;
+        background-color: var(--background-color);
+        padding: 0 1rem 0 0;
+        border-radius: 0 1rem 1rem 0;
+    }
+    
+    header p{
+        width: 25%;
+        background-color: var(--background-color);
+        align-content: baseline;
+    }
+}
