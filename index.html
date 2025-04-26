@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Avoi Ltd</title>
-    <link rel="stylesheet" href="/Hero/styles.css">
+    <link rel="stylesheet" href="./Hero/styles.css">
 </head>
 <body>
     <main>
@@ -326,6 +326,25 @@
             </div>
         </div>
 
+        <!-- water section -->
+        <section id="ingredient-video-section" class="video-section">
+            <!-- <video id="waterVideo" muted loop playsinline>
+              <source src="https://v1.pinimg.com/videos/mc/expMp4/24/6f/bf/246fbf7b20732f082cce0552b33bb322_t1.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video> -->
+        
+            <video id="waterVideo" muted loop playsinline>
+                <source src="./Hero/vidoes/ice_drops.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+          
+            <div class="overlay-text" id="overlayText">
+              <h2>Scientifically Proven Ingredients</h2>
+              <p>Unlock the potential of our formulations with scientifically proven ingredients</p>
+              <button class="shop-btn">Shop</button>
+            </div>
+        </section>
+
         <!-- footer section  -->
         <footer class="footer">
             <div class="footer-container">
@@ -390,8 +409,13 @@
                 </div>
             </div>
         </footer>
+
+        <!-- back to top button -->
+        <button class="scroll-to-top" onclick="scrollToTop()">
+            <img src="./Hero/images/arrow.svg" alt="Arrow top">
+        </button>
     </main>
-    <script src="avoi.js"></script>
+    <script src="./Hero/avoi.js"></script>
     <script src="scrip.js"></script>
 </body>
 </html>

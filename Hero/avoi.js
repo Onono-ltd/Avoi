@@ -18,3 +18,41 @@ function toggleMenu() {
 }
 icon.addEventListener("click", toggleMenu);
 closeIcon.addEventListener("click", toggleMenu);
+
+
+
+const video = document.getElementById('waterVideo');
+const overlayText = document.getElementById('overlayText');
+
+const observer = new IntersectionObserver(entries => {
+entries.forEach(entry => {
+    if (entry.isIntersecting) {
+    video.play();
+    overlayText.classList.add('visible');
+    } else {
+    video.pause();
+    overlayText.classList.remove('visible');
+    }
+});
+}, {
+threshold: 0.5
+});
+
+observer.observe(document.getElementById('ingredient-video-section'));
+
+const scrollBtn = document.querySelector('.scroll-to-top');
+
+window.addEventListener('scroll', () => {
+if (window.scrollY > 300) {
+    scrollBtn.style.display = 'flex';
+} else {
+    scrollBtn.style.display = 'none';
+}
+});
+
+function scrollToTop() {
+window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+});
+}
