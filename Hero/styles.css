@@ -568,8 +568,8 @@ body {
         padding: 10rem 5rem 0 6rem;
         background-color: var(--accent-color);
         background-image: url(images/signature.png);
-        background-position-x: right;
-        background-position-y: bottom;
+        background-position-x: 95%;
+        background-position-y: 95%;
         background-size: 10rem;
         background-repeat: no-repeat;
 
