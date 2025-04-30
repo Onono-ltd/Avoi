@@ -26,7 +26,7 @@ body {
 
     header {
         background-color: white;
-        height: 100vh;
+        height: 60vh;
         width: 100vw;
         display: flex;
         flex-direction: column;
@@ -39,7 +39,7 @@ body {
     .navbar{
         position: fixed;
         width: 100%;
-        height: 6rem;
+        height: 4rem;
         background-color: white;
         display: flex;
     }
@@ -53,8 +53,8 @@ body {
     }
 
     .navbar img{
-        height: 3rem;
-        width: 3rem;
+        height: 2.5rem;
+        width: 2.5rem;
     }
 
     .menu{
@@ -66,7 +66,7 @@ body {
         background-color: var(--accent-color);
         display: flex;
         justify-content: space-between;
-        padding: 2rem 1rem 2rem 2rem;
+        padding: 0.5rem 1rem 2rem 2rem;
         width: 50%;
         height: 100vh;
         transform: translateX(200%);
@@ -117,30 +117,30 @@ body {
         background-size: 100% 100%;
         height: 100%;
         width: 100%;
-        margin-top: 6rem;
+        margin-top: 4rem;
         display: flex;
         flex-direction: column;
     }
 
-    header h1{
+    .home h1{
         display: none;
     }
     
-    header h2{
+    .home h2{
         font-size: 2rem;
         font-family: cursive;
-        margin: 8rem 0 0 2rem;
+        margin: 2rem 0 0 2rem;
     }
 
-    header h3{
-        font-size: 2rem;
+    .home h3{
+        font-size: 3rem;
         font-family: cursive;
-        margin: 1rem 0 0 2rem;
+        margin: 0.5rem 0 0 2rem;
     }
     
-    header p{
+    .home p{
         font-size: 20px;
-        width: 55%;
+        width: 65%;
         margin: 1rem 0 0 2rem;
     }
 
@@ -148,6 +148,16 @@ body {
         width: 95%;
         margin: 4rem auto;
         display: block;
+    }
+
+    #our-story .h1{
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    #our-story .h1 span{
+        color: var(--primary-color);
     }
 
     .texts{
@@ -250,6 +260,50 @@ body {
         border-radius: 4px;
     }
 
+    .mission{
+        margin-top: 1rem;
+        display: flex;
+        width: 95%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #mission{
+        width: 50%;
+        height: 20%;
+        border-radius: 0.5rem;
+    }
+
+    .mission div{
+        width: 40%;
+    }
+
+    .mission div h1{
+        text-align: center;
+    }  
+
+    .vision{
+        margin-top: 1rem;
+        display: flex;
+        width: 95%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #vision{
+        width: 50%;
+        height: 20%;
+        border-radius: 0.5rem;
+    }
+
+    .vision div{
+        width: 40%;
+    }
+
+    .vision div h1{
+        text-align: center;
+    }
+
     #founder {
         width: 95vw;
         margin: 2rem auto;
@@ -274,25 +328,29 @@ body {
     }
     
     #founder .test :first-child{
-        width: 17rem;
-        display: flex;
-        flex-direction: row-reverse;
+        /* width: 17rem; */
+        /* display: flex; */
+        /* flex-direction: row-reverse; */
         justify-content: left;
     }
     
     #founder .test :first-child h1{
-        font-size: 1.5rem;
+        text-align: center;
+        font-size: 2rem;
         color: var(--text-color);
+    }
+
+    #founder .test :first-child h1 span{
+        color: var(--primary-color);
+        text-align: center;
     }
     
     #founder .test :first-child p{
-        width: 50%;
-        border-bottom: solid 3px var(--secondary-color);
+        display: none;
     }
     
     #founder .test h2{
-        font-size: 4rem;
-        color: var(--primary-color);
+        display: none;
     }
     
     #founder .test p{
@@ -378,6 +436,13 @@ body {
         display: none
     }
 
+    #home{
+        padding-top: 3.5rem;
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
+
     .home{
         background-image: url(images/Men-Skin1.webp);
         background-repeat: no-repeat;
@@ -385,8 +450,7 @@ body {
         height: 100%;
         width: 99%;
         margin: auto;
-        margin-top: 3.5rem;
-        position: relative;
+        /* margin-top: 3.5rem; */
         border-radius: 1rem;
         display: flex;
         flex-direction: column;
@@ -398,11 +462,11 @@ body {
         bottom: 0;
     }
     
-    header h1{
+    .text h1{
         font-size: 4.7rem;
     }
 
-    header h2, h3{
+    .text h2, h3{
         display: none;
     }
     
@@ -428,25 +492,44 @@ body {
     }
     
     header p{
-        width: 25%;
+        width: 30%;
+        font-size: 1.1rem;
         background-color: white;
         align-content: baseline;
     }
 
     /* our story section  */
-    #our-story {
+    #our-story{
+        padding: 8.5rem 0;
+    }
+
+    .our-story {
         width: 93%;
-        margin: 8rem auto;
+        margin: auto;
+    } 
+
+    .our-story h1{
+        text-align: center;
+        color: var(--primary-color);
+        font-size: 3.5rem;
+    }
+
+    .our-story h1 span{
+        color: var(--secondary-color);
+    }
+
+    .story{
+        margin-top: 5rem;
         display: flex;
         justify-content: space-between;
-    } 
+    }
     
     .texts{
-        width: 40%;
+        width: 35%;
         padding: 5rem 0 3rem 0;
     }
     
-    .first-text{
+    /* .first-text{
         width: 85%;
         display: flex;
     }
@@ -454,9 +537,9 @@ body {
     .first-text h1{
         font-size: 2rem;
         color: var(--text-color);
-    }
+    } */
     
-    .texts :first-child p{
+    /* .texts :first-child p{
         width: 100%;
         border-bottom: solid 3px var(--secondary-color);
     }
@@ -465,7 +548,7 @@ body {
         font-size: 5rem;
         line-height: 4.5rem;
         color: var(--primary-color);
-    }
+    } */
     
     .texts p{
         font-size: 1.8rem;
@@ -474,6 +557,7 @@ body {
     
     .images{
         width: 50%;
+        height: 75vh;
         padding: 10px;
         border: dashed 3px var(--secondary-color);
         border-radius: 2%;
@@ -539,30 +623,78 @@ body {
         width: 49%;
         border-radius: 7px;
     }
+
+    .mission{
+        margin-top: 5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .mission div{
+        width: 40%;
+    }
+
+    .mission div p{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #mission{
+        width: 45%;
+        height: 35rem;
+        border-radius: 1rem;
+    }
+    
+    .vision{
+        /* margin-top: 2rem; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .vision div{
+        width: 40%;
+    }
+
+    .vision div p{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #vision{
+        width: 45%;
+        height: 35rem;
+        border-radius: 1rem;
+    }
     
     
     /* Our Founder Section */
-    #founder {
+    #founder{
+        padding: 3rem 0 5rem 0;
+    }
+
+    .founder {
         width: 93%;
         height: 90vh;
-        margin: 8rem auto;
+        margin: auto;
         display: flex;
         justify-content: space-between;
         transition: ease-in-out;
         transition-duration: 300ms;
     }
     
-    #founder .image{
+    .founder .image{
         width: 45%;
     }
     
-    #founder .image img{
+    .founder .image img{
         width: 100%;
         height: 100%;
         border-radius: 2rem 0 0 2rem;
     }
     
-    #founder .test{
+    .founder .test{
         text-align: end;
         width: 55%;
         padding: 10rem 5rem 0 6rem;
@@ -575,27 +707,31 @@ body {
 
     }
     
-    #founder .test :first-child{
+    .founder .test :first-child{
         display: flex;
         justify-content: flex-end;
     }
     
-    #founder .test :first-child h1{
+    .founder .test :first-child h1{
         font-size: 2rem;
         color: var(--text-color);
     }
+
+    .founder .test :first-child h1 span{
+        display: none;
+    }
     
-    #founder .test :first-child p{
+    .founder .test :first-child p{
         width: 40%;
         border-bottom: solid 3px var(--secondary-color);
     }
     
-    #founder .test h2{
+    .founder .test h2{
         font-size: 5rem;
         color: var(--primary-color);
     }
     
-    #founder .test p{
+    .founder .test p{
         font-size: 1.8rem;
         text-align: left;
     }
@@ -763,6 +899,7 @@ body {
         color: var(--text-highlight);
         text-decoration: none;
         font-size: 0.875rem;
+        font-weight: bold;
     }
     
     .footer-section p {
@@ -842,7 +979,10 @@ body {
         overflow: hidden;
         /* width: 8vw; */
         height: 100vh;
+        width: 100vw;
+        padding-top: 5rem;
     }
+
     .header-sect {
         text-align: center;
         /* overflow: hidden; */
@@ -1059,13 +1199,16 @@ body {
         padding-top: 10rem;
     
     }
+
     .ingredient-text {
         text-align: center;
     }
+
     .ingredient-text > h2 {
         font-size: 3.2rem;
         color: var(--primary-color);
     }
+
     .ingredient-text > p {
         font-size: 1.3rem;
         font-weight: 400;
@@ -1150,6 +1293,7 @@ body {
         color: #333;
         z-index: -3;
     }
+
     .product-item > img {
         height: 150px;
         width: 150px;
@@ -1202,7 +1346,6 @@ body {
         background-color: var(--primary-color);
     }
     
-    
     .product-item:nth-child(odd) {
         background-color: var(--accent-color);
     }
@@ -1217,6 +1360,7 @@ body {
         box-shadow: 0px 4px 12px rgba(170, 169, 169, 0.6);
         
     }
+
     .view-all-btn {
         display: block;
         margin: 3rem auto 0;
@@ -1404,11 +1548,12 @@ body {
         font-weight: bold;
     }
 
+    /* water section  */
     .video-section {
         position: relative;
-        width: 100%;
+        width: 100vw;
         height: 100vh;
-        margin-top: 10rem;
+        margin-top: 17rem;
         background-color: var(--background-color);
         overflow: hidden;
     }
