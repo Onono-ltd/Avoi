@@ -21,24 +21,34 @@ closeIcon.addEventListener("click", toggleMenu);
 
 
 
-const video = document.getElementById('waterVideo');
-const overlayText = document.getElementById('overlayText');
 
-const observer = new IntersectionObserver(entries => {
-entries.forEach(entry => {
-    if (entry.isIntersecting) {
-    video.play();
-    overlayText.classList.add('visible');
-    } else {
-    video.pause();
-    overlayText.classList.remove('visible');
-    }
+const slides = document.querySelectorAll('.carousel-slide');
+const next = document.querySelector('.next');
+const prev = document.querySelector('.prev');
+let current = 0;
+
+function showSlide(index) {
+slides.forEach((slide, i) => {
+    slide.classList.remove('active');
+    if (i === index) slide.classList.add('active');
 });
-}, {
-threshold: 0.5
+}
+
+next.addEventListener('click', () => {
+current = (current + 1) % slides.length;
+showSlide(current);
 });
 
-observer.observe(document.getElementById('ingredient-video-section'));
+prev.addEventListener('click', () => {
+current = (current - 1 + slides.length) % slides.length;
+showSlide(current);
+});
+
+// Auto-slide every 7 seconds
+setInterval(() => {
+current = (current + 1) % slides.length;
+showSlide(current);
+}, 7000);
 
 const scrollBtn = document.querySelector('.scroll-to-top');
 
