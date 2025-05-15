@@ -1,3 +1,4 @@
+
 const slides = document.querySelectorAll('.carousel-slide');
 const next = document.querySelector('.next');
 const prev = document.querySelector('.prev');
