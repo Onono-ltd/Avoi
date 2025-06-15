@@ -4,7 +4,7 @@
     --accent-color: #00b9e8;
     --background-color: #F5EAD4;
     --text-color: #fff;
-    /* --tex-color: #333; */
+    --tex-color: #333;
     --button-color:#33cc33;
 }
 
@@ -29,7 +29,7 @@ footer{
 }
 
 .footer {
-    background-color: var(--accent-color);
+    background-color: var(--primary-color);
     color: var(--text-color);
     font-family: 'Poppins', sans-serif;
     padding: 8rem 1.5rem 2rem;
@@ -49,14 +49,14 @@ footer{
     /* font-family: 'Playfair Display', serif; */
     font-size: 1.8rem;
     margin-bottom: 0.5rem;
-    color: var(--primary-color);
+        color: var(--tex-color);
   }
   
   .footer-links h2,
   .footer-newsletter h2 {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
-    color: var(--primary-color);
+    color: var(--tex-color);
   }
   
   .footer-links ul {
@@ -75,7 +75,7 @@ footer{
   }
   
   .footer-links ul li a:hover {
-    color: var(--primary-color);
+    color: var(--secondary-color);
   }
   
   .footer-newsletter .input-group {
@@ -91,21 +91,21 @@ footer{
     padding: 0.75rem 1rem;
     padding-right: 8rem;
     border: 1px solid #fff;
-    border-radius: 50px;
+    border-radius: 10px;
     outline: none;
     font-size: 0.95rem;
   }
   
   .footer-newsletter button {
     position: absolute;
-    background-color: var(--button-color);
+    background-color: var(--primary-color);
     top: 50%;
     right: 4px;
     transform: translateY(-50%);
     padding: 0.6rem 1.2rem;
     color: white;
     border: none;
-    border-radius: 50px;
+    border-radius: 10px;
     font-weight: 500;
     cursor: pointer;
     font-size: 0.9rem;
@@ -184,7 +184,7 @@ footer{
   }
   
   .carousel-nav button {
-    background-color: var(--button-color);
+    background-color: var(--primary-color);
     color: white;
     border: none;
     border-radius: 50%;
@@ -199,7 +199,7 @@ footer{
   }
   
   .why-choose-card {
-    background-color: var(--accent-color); /* Rich brown with transparency */
+    background-color: var(--secondary-color); /* Rich brown with transparency */
     padding: 2rem;
     border-radius: 20px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
@@ -235,6 +235,11 @@ footer{
     color: var(--primary-dark);
   }
 
+  .footer-bottom p{
+    color: var(--tex-color);
+    font-weight: bold;
+  }
+
 .social-links a img {
     width: 30px;
     margin-right: 1rem;
@@ -250,7 +255,7 @@ footer{
     bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: var(--button-color);
+    background-color: var(--primary-color);
     color: white;
     border: none;
     border-radius: 50%;
@@ -383,9 +388,9 @@ footer{
         top: 0;
         display: flex;
         justify-content: space-between;
-        padding: 0.5rem 1rem 2rem 2rem;
+        padding: 0.5rem 0.5rem 2rem 2rem;
         width: 16rem;
-        height: 35rem;
+        height: 25rem;
         border-radius: 1rem 0 0 1rem;
         transform: translateX(200%);
         transition: transform 0.3s;
@@ -398,32 +403,32 @@ footer{
     }
 
     ul{
-        margin-top: 4rem;
-        font-size: 1.5rem;
+        margin-top: 3rem;
+        font-size: 1.2rem;
     }
 
     li{
-        margin-top: 2rem;
+        margin-top: 1.5rem;
         list-style: none;
     }
 
     li a{
         text-decoration: none;
-        color: var(--primary-color);
+        color: var(--tex-color);
     }
     
     li a:hover {
-        color: var(--secondary-color);
+        color: var(--primary-color);
     }
 
     .menu button{
-        margin-top: 3rem;
-        width: 10rem;
-        height: 3.5rem;
+        margin-top: 1.5rem;
+        width: 8rem;
+        height: 3rem;
         color: white;
-        background-color: var(--button-color);
+        background-color: var(--primary-color);
         border-radius: 5px;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         border: none;
     }
 
@@ -449,7 +454,7 @@ footer{
         width: 100%;
         display: flex;
         flex-direction: column;
-        color: var(--secondary-color);
+        color: var(--primary-color);
     }
 
     .home h1{
@@ -474,7 +479,7 @@ footer{
         font-size: 20px;
         width: 65%;
         margin: 1rem 0 0 2rem;
-        color: var(--primary-color);
+        color: var(--tex-color);
     }
 
     .our-story {
@@ -487,38 +492,16 @@ footer{
         text-align: center;
         font-size: 2rem;
         margin-bottom: 1rem;
-        color: var(--secondary-color);
+        color: var(--tex-color);
     }
 
     .our-story .h1 span{
-        color: var(--primary-color);
+        color: var(--tex-color);
     }
 
     .texts{
         width: 100%;
-        color: var(--secondary-color);
-    }
-
-    .first-text{
-        display: flex;
-        width: 18rem;
-    }
-
-    .first-text h1{
-        font-size: 1.5rem;
-        color: var(--text-color);
-    }
-
-    .first-text p{
-        width: 70%;
-        border-bottom: solid 3px var(--secondary-color);
-    }
-
-    .texts h2{
-        font-size: 4rem;
-        margin-top: 0.7rem;
-        line-height: 3.5rem;
-        color: var(--primary-color);
+        color: var(--tex-color);
     }
 
     .texts p{
@@ -530,7 +513,7 @@ footer{
         width: 100%;
         margin-top: 3rem;
         padding: 5px;
-        border: dashed 2px var(--accent-color);
+        border: dashed 2px var(--secondary-color);
         border-radius: 2%;
     }
 
@@ -601,7 +584,7 @@ footer{
         width: 95%;
         justify-content: space-between;
         align-items: center;
-        color: var(--secondary-color);
+        color: var(--tex-color);
     }
 
     #mission{
@@ -616,7 +599,7 @@ footer{
 
     .mission div h1{
         text-align: center;
-        color: var(--primary-color);
+        color: var(--tex-color);
     }  
 
     .vision{
@@ -625,7 +608,7 @@ footer{
         width: 95%;
         justify-content: space-between;
         align-items: center;
-        color: var(--secondary-color);
+        color: var(--tex-color);
     }
 
     #vision{
@@ -640,7 +623,7 @@ footer{
 
     .vision div h1{
         text-align: center;
-        color: var(--primary-color);
+        color: var(--tex-color);
     }
 
     .founder {
@@ -665,7 +648,7 @@ footer{
     .founder .test{
         text-align: left;
         width: 100%;
-        color: var(--secondary-color);
+        color: var(--tex-color);
     }
     
     .founder .test :first-child{
@@ -678,11 +661,11 @@ footer{
     .founder .test :first-child h1{
         text-align: center;
         font-size: 2rem;
-        color: var(--secondary-color);
+        color: var(--tex-color);
     }
 
     .founder .test :first-child h1 span{
-        color: var(--primary-color);
+        color: var(--tex-color);
         text-align: center;
     }
     
@@ -716,15 +699,15 @@ footer{
 .header-sect > h2 { 
     /* padding-top: 5px; */
     font-size: 2rem;
-    color: var(--primary-color);
+        color: var(--tex-color);
 }
 
 .header-sect > h2 span {
-    color: var(--secondary-color);
+        color: var(--tex-color);
 }
 
 .header-sect > p {
-    color: var(--secondary-color);
+        color: var(--tex-color);
     font-size: 1.3rem;  
     margin-top: 1rem;
 }
@@ -747,7 +730,6 @@ footer{
     /* background: var(--primary-color); */
     box-shadow: 0 25px 50px rgba(228, 215, 215, 0.5);
     border-radius: 20px;
-
 }
 .slider .slides {
     position: absolute;
@@ -761,7 +743,7 @@ footer{
     transition: 0.5s;
     box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
     border-radius: 20px;
-    border: dotted 2px var(--accent-color);
+    border: dotted 2px var(--secondary-color);
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
@@ -826,7 +808,7 @@ footer{
     position: relative;
     width: 50px;
     height: 50px;
-    background: var(--button-color);
+    background: var(--primary-color);
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -858,33 +840,39 @@ footer{
 }
 
 .cart-btn {
-    background-color: var(--button-color);
+    background-color: var(--primary-color);
     color: var(--text-color);
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 1rem;
+    margin-top: 0.5rem;
 }
 .cart-btn:hover {
     background-color: var(--primary-color);
     color: var(--text-color);
 }
+
+#h2{
+    color: var(--tex-color);
+}
+
 .c-btn h3 {
     font-size: 1.2rem;
     margin: 10px 0;
-    color: var(--primary-color);
+    color: var(--tex-color);
 }
 
 .c-btn .stars {
-    color: var(--primary-color);
+    color: var(--secondary-color);
     font-size: 1.2rem;
     margin: 5px 0;
 }
 
 .product-card .price {
     font-size: 1.2rem;
-    color: var(--primary-color);
+    color: var(--tex-color);
     margin: 10px 0;
 }
 
@@ -901,12 +889,11 @@ footer{
 
 .content h3 {
     font-size: 2.5rem;
-    color: var(--primary-color);
+    color: var(--tex-color);
 }
 
 .content p {
-    
-    color: var(--primary-color);
+    color: var(--tex-color);
 }
 
 .slider .slides:nth-child(1) .content,
@@ -1350,19 +1337,19 @@ color: #521908;}
     
     .nav-links li a {
         text-decoration: none;
-        color: var( --primary-color);
+        color: var( --tex-color);
         font-weight: bolder;
         transition: 0.3s;
         font-size: 20px;
     }
     
     .nav-links li a:hover {
-        color: var(--secondary-color);
+        color: var(--primary-color);
     }
     
     nav button{
         color: white;
-        background-color: var(--button-color);
+        background-color: var(--primary-color);
         width: 8rem;
         height: 30px;
         border-radius: 5px;
@@ -1371,7 +1358,7 @@ color: #521908;}
     }
     
     button:hover{
-        background-color: var(--primary-color);
+        /* background-color: var(--primary-color); */
         cursor: pointer;
     }
 
@@ -1399,7 +1386,7 @@ color: #521908;}
         margin: auto;
         border-radius: 1rem;
         display: flex;
-        color: var(--primary-color);
+        color: var(--tex-color);
         flex-direction: column;
         justify-content: flex-end;
     }
@@ -1410,6 +1397,7 @@ color: #521908;}
     }
     
     .text h1{
+        color: var(--primary-color);
         font-size: 4.7rem;
     }
 
@@ -1443,6 +1431,7 @@ color: #521908;}
         font-size: 1.1rem;
         background-color: white;
         align-content: baseline;
+        padding-bottom: 1rem;
     }
 
     /* Our best seller Section Header */
@@ -1464,16 +1453,16 @@ color: #521908;}
 
     .best-seller-text > h2 {
         font-size: 3.2rem;
-        color: var(--primary-color);
+        color: var(--tex-color);
     }
 
     .best-seller-text > h2 > span {
         font-size: 3.2rem;
-        color: var(--secondary-color);
+        color: var(--tex-color);
     }
 
     .best-seller-text > p {
-        color: white;
+        color: var(--tex-color);
         font-size: 1.5rem;
         font-weight: 400;
     }
@@ -1605,7 +1594,7 @@ color: #521908;}
     
     
     .product-item:nth-child(odd) {
-        background-color: var(--accent-color);
+        background-color: var(--background-color);
     }
     
     .product-item:nth-child(even) {
@@ -1621,16 +1610,16 @@ color: #521908;}
     .view-all-btn {
         display: block;
         margin: 3.5rem auto 0;
-        padding: 1.3rem 5rem;
-        background-color: var(--button-color);
+        padding: 1rem 3rem;
+        background-color: var(--primary-color);
         border: none;
-        border-radius: 25px;
+        border-radius: 10px;
         cursor: pointer;
         font-weight: bold;
         transition: transform 0.3s;
         margin-bottom: 2rem;
         border-style: groove var(--primary-color);
-        font-size: 1rem;
+        font-size: 1.3rem;
         transition: all 0.5s ease;
         color: #fff;
     }
@@ -1663,12 +1652,12 @@ color: #521908;}
 
     .our-story h1{
         text-align: center;
-        color: var(--primary-color);
+        color: var(--tex-color);
         font-size: 3.5rem;
     }
 
     .our-story h1 span{
-        color: var(--secondary-color);
+        color: var(--tex-color);
     }
 
     .story{
@@ -1679,13 +1668,13 @@ color: #521908;}
     }
     
     .texts{
-        color: var(--secondary-color);
+        color: var(--tex-color);
         width: 35%;
         padding: 0 0 3rem 0;
     }
     
     .texts p{
-        font-size: 2rem;
+        font-size: 1.5rem;
         margin-top: 1rem;
     }
     
@@ -1693,7 +1682,7 @@ color: #521908;}
         width: 50%;
         height: 75vh;
         padding: 10px;
-        border: dashed 2px var(--accent-color);
+        border: dashed 2px var(--secondary-color);
         border-radius: 2%;
     }
     
@@ -1763,7 +1752,7 @@ color: #521908;}
         display: flex;
         justify-content: space-between;
         align-items: center;
-        color: var(--secondary-color);
+        color: var(--tex-color);
     }
 
     .mission div{
@@ -1777,7 +1766,7 @@ color: #521908;}
 
     #mission{
         width: 45%;
-        height: 37rem;
+        height: 30rem;
         border-radius: 1rem;
     }
     
@@ -1785,7 +1774,7 @@ color: #521908;}
         display: flex;
         justify-content: space-between;
         align-items: center;
-        color: var(--secondary-color);
+        color: var(--tex-color);
     }
 
     .vision div{
@@ -1799,7 +1788,8 @@ color: #521908;}
 
     #vision{
         width: 44%;
-        height: 37rem;
+        /* height: 37rem; */
+        height: 30rem;
         border-radius: 1rem;
     }
     
@@ -1834,7 +1824,7 @@ color: #521908;}
         text-align: end;
         width: 55%;
         padding: 10rem 5rem 0 6rem;
-        background-color: var(--primary-color);
+        background-color: var(--secondary-color);
         background-image: url(images/signature.png);
         background-position-x: 95%;
         background-position-y: 95%;
@@ -1850,7 +1840,7 @@ color: #521908;}
     
     .founder .test :first-child h1{
         font-size: 2rem;
-        color: var(--text-color);
+        color: var(--tex-color);
     }
 
     .founder .test :first-child h1 span{
@@ -1859,17 +1849,18 @@ color: #521908;}
     
     .founder .test :first-child p{
         width: 40%;
-        border-bottom: solid 3px var(--secondary-color);
+        border-bottom: solid 3px var(--tex-color);
     }
     
     .founder .test h2{
         font-size: 5rem;
-        color: var(--secondary-color);
+        color: var(--tex-color);
     }
     
     .founder .test p{
         font-size: 1.8rem;
         text-align: left;
+        color: var(--tex-color);
     }
 
 
@@ -1890,15 +1881,15 @@ color: #521908;}
     
     .header-sect > h2 { 
         font-size: 3.5rem;
-        color: var(--primary-color);
+        color: var(--tex-color);
     }
     
     .header-sect > h2 span {
-        color: var(--secondary-color);
+        color: var(--tex-color);
     }
     
     .header-sect > p {
-        color: var(--secondary-color);
+        color: var(--tex-color);
         font-size: 1.5rem; 
         margin-top: 1rem; 
     }
@@ -1920,7 +1911,7 @@ color: #521908;}
         inset: 80px 200px 80px 80px;
         box-shadow: 0 25px 50px rgba(228, 215, 215, 0.5);
         border-radius: 20px;
-        border: dotted 2px var(--accent-color);
+        border: dotted 2px var(--secondary-color);
     }
 
     .slider .slides {
@@ -2000,7 +1991,7 @@ color: #521908;}
         position: relative;
         width: 50px;
         height: 50px;
-        background: var(--button-color);
+        background: var(--primary-color);
         cursor: pointer;
         display: flex;
         justify-content: center;
@@ -2032,13 +2023,14 @@ color: #521908;}
     }
     
     .cart-btn {
-        background-color: var(--button-color);
+        background-color: var(--primary-color);
         color: var(--text-color);
         border: none;
         padding: 10px 20px;
         border-radius: 5px;
         cursor: pointer;
         font-size: 1rem;
+        margin-top: 0.5rem;
     }
     
     .cart-btn:hover {
@@ -2049,18 +2041,18 @@ color: #521908;}
     .c-btn h2{
         font-size: 2rem;
         margin: 10px 0;
-        color: var(--primary-color);
+        color: var(--tex-color);
     }
     
     .c-btn .stars {
-        color: var(--primary-color);
+        color: var(--secondary-color);
         font-size: 1.2rem;
         margin: 5px 0;
     }
     
     .product-card .price {
         font-size: 1.2rem;
-        color: var(--primary-color);
+        color: var(--tex-color);
         margin: 10px 0;
     }
     
@@ -2077,11 +2069,11 @@ color: #521908;}
 
     .content h2 {
         font-size: 2.5rem;
-        color: var(--primary-color);
+        color: var(--tex-color);
     }
 
     .content p {
-        color: var(--primary-color);
+        color: var(--tex-color);
     }
     
     .slider .slides:nth-child(1) .content,
@@ -2095,7 +2087,7 @@ color: #521908;}
 
       /* ingredients section  */
     .ingredient-section {
-        color: var(--primary-color);
+        color: var(--tex-color);
         margin: 0;
         padding: 0;
         font-size: 1.5rem;
@@ -2108,12 +2100,12 @@ color: #521908;}
     .ingredient-section h2 {
         font-size: 3rem;
         margin-bottom: 20px;
-        color: var(--primary-color);
+        color: var(--tex-color);
     }
     .ingredient-section p {
         font-size: 1.4rem;
         margin-bottom: 40px;
-        color: var(--secondary-color);
+        color: var(--tex-color);
     }
     
     /* Grid container for first row */
@@ -2129,7 +2121,7 @@ color: #521908;}
     /* Ingredient card styles */
     .Ingredient-card {
         padding: 15px;
-        border: 2px solid var(--accent-color);
+        border: 2px solid var(--secondary-color);
         border-radius: 8px;
         box-shadow: 2px 5px 10px rgba(153, 153, 153, 0.1);
         text-align: center;
@@ -2161,7 +2153,7 @@ color: #521908;}
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 2px solid var(--accent-color);
+        border: 2px solid var(--secondary-color);
         box-shadow: 0px 4px 12px rgba(103, 102, 184, 0.6);
         border-radius: 8px;
     }
@@ -2224,7 +2216,7 @@ color: #521908;}
     .contact-left h2 {
         font-size: 2rem;
         font-weight: bold;
-        color: var(--primary-color);
+        color: var(--tex-color);
         align-items: start;
     }
     
@@ -2232,16 +2224,16 @@ color: #521908;}
         width: 15rem;
         height: 3px;
         display: inline-block;
-        background-color: var(--secondary-color);
+        color: var(--tex-color);
     }
     
     .question_mark{
-        color: var(--primary-color);
+        color: var(--tex-color);
     }
     
     .Converse{
         display: block;
-        color: var(--secondary-color);
+        color: var(--tex-color);
         font-size: 5rem;
     }
     
@@ -2254,12 +2246,6 @@ color: #521908;}
         text-align: center;
         width: 400px;
     }
-
-    .input-group {
-        display: flex;
-        justify-content: space-between;
-        gap: 10px;
-    }
     
     .input-group {
         display: flex;
@@ -2271,13 +2257,13 @@ color: #521908;}
         display: flex;
         flex-direction: column;
         align-items: start;
-        color: var(--primary-color);
+        color: var(--tex-color);
     }
     
     .input-group input, textarea{
         border: none;
         margin: 10px 0;
-        border-bottom: 2px solid var(--secondary-color) ; 
+        border-bottom: 2px solid var(--primary-color) ; 
         outline: none;
         background: transparent;
         color: var(--primary-color);
@@ -2293,14 +2279,14 @@ color: #521908;}
     }
     
     .contact-right h3 {
-        color: var(--secondary-color);
+        color: var(--tex-color);
         margin-bottom: 35px;
         font-weight: bold;
         font-size: 30px;
     }
     
     .send {
-        background: var(--button-color);
+        background: var(--primary-color);
         color: white;
         padding: 12px;
         margin-top: 20px;
