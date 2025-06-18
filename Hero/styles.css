@@ -470,9 +470,9 @@ footer{
 
     .home h3{
         font-size: 1.8rem;
-        font-family: cursive;
+        /* font-family: cursive; */
         margin: 0 0 0 2rem;
-        color: var(--SECONDARY-color);
+        color: var(--primary-color);
     }
     
     .home p{
@@ -924,15 +924,15 @@ footer{
 }
 .best-seller-text > h2 {
     font-size: 2.5rem;
-    color: var(--tex-color);
+    color: var(--text-color);
 }
 
 .best-seller-text > h2 > span {
-    color: var(--tex-color);
+    color: var(--text-color);
 }
 
 .best-seller-text > p {
-    color: var(--tex-color);
+    color: var(--text-color);
     font-size: 1.5rem;
     font-weight: 400;
 }
@@ -1253,7 +1253,7 @@ color: #521908;}
     .input-group input, textarea{
         border: none;
         margin: 10px 0;
-        border-bottom: 2px solid var(--primary-color) ; 
+        border-bottom: 2px solid var(--tex-color) ; 
         outline: none;
         background: transparent;
     color: var(--tex-color);
