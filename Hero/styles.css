@@ -907,8 +907,8 @@ footer{
 
 
 /* Our Best Seller Section */
-
 .best-seller {
+    position: relative;
     min-height: 90vh;
     min-width: 100%;
     background: url('content-file/istockphoto-1462119292-612x612.jpg');
@@ -918,26 +918,45 @@ footer{
     padding-top: 4rem;
 }
 
+.best-seller::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('content-file/istockphoto-1462119292-612x612.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(90px);
+    z-index: 1;
+}
+
 .best-seller-text {
+    position: relative;
+    z-index: 1;
     text-align: center;
     margin-bottom: 2rem;
 }
 .best-seller-text > h2 {
     font-size: 2.5rem;
-    color: var(--text-color);
+    color: rgb(26, 25, 25);
 }
 
 .best-seller-text > h2 > span {
-    color: var(--text-color);
+    color: rgb(26, 25, 25);
 }
 
 .best-seller-text > p {
-    color: var(--text-color);
+    color: rgb(26, 25, 25);
     font-size: 1.5rem;
     font-weight: 400;
 }
 
 .backdrop-box {
+    position: relative;
+    z-index: 1;
     width: 81vw;
     height: 25vh;
     background: rgba(255, 255, 255, 0.2);
@@ -1105,6 +1124,8 @@ footer{
 }
 
 .view-btn {
+    position: relative;
+    z-index: 10;
     padding-top: 10px;
     padding-bottom: 30px;
 }
@@ -2365,7 +2386,7 @@ left: 480;
         min-height: 1rem;
         /* margin: 0px 10rem; */
     }
-    .content h2 {
+    .content h3 {
         font-size: 2rem;
         color: var(--tex-color);
     }
@@ -2382,7 +2403,7 @@ left: 480;
         min-height: 1rem;
         /* margin: 0px 10rem; */
     }
-    .content h2 {
+    .content h3 {
         font-size: 2rem;
         color: var(--tex-color);
     }
@@ -2399,7 +2420,7 @@ left: 480;
         min-height: 1rem;
         /* margin: 0px 10rem; */
     }
-    .content h2 {
+    .content h3 {
         font-size: 1.5rem;
         color: var(--tex-color);
     }
