@@ -356,9 +356,9 @@ footer{
   .footer-newsletter button {
     position: absolute;
     background-color: var(--primary-color);
-    top: 50%;
+    top: 25%;
     right: 4px;
-    transform: translateY(-50%);
+    /* transform: translateY(-50%); */
     padding: 0.6rem 1.2rem;
     color: white;
     border: none;
@@ -1684,7 +1684,7 @@ color: #521908;}
         flex-direction: column;
         align-items: start;
         color: var(--tex-color);
-        margin-bottom: 8%;
+        /* margin-bottom: 8%; */
     }
     
     .input-group input, textarea{
