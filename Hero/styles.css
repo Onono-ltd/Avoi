@@ -1122,7 +1122,7 @@ footer{
     position: absolute;
     /* background-color: var(--accent-color); */
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
     /* max-height: 50rem; */
     overflow: hidden;
     display: flex;
@@ -1285,6 +1285,7 @@ footer{
 
 #content{
     border-radius: 20px;
+    background-color: rgba(59, 55, 55, 0.4); 
 }
 
 .content {
