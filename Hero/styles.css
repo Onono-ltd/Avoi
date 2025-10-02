@@ -649,7 +649,8 @@ footer{
         justify-content: space-between;
         padding: 0.5rem 0.5rem 2rem 2rem;
         width: 16rem;
-        height: 35rem;
+        /* height: 35rem; */
+        height: 100vh;
         border-radius: 1rem 0 0 1rem;
         transform: translateX(200%);
         transition: transform 0.3s;
@@ -1092,12 +1093,14 @@ footer{
 .main-cont {
     /* background-color: var(--accent-color); */
     overflow: hidden;
-    /* width: 8vw; */
+    width: 100%;
     min-height: 90vh;
     margin-bottom: 3rem;
 }
 .header-sect {
     text-align: center;
+    width: 95%;
+    margin: auto;
     /* padding-top: 30px; */
     /* overflow: hidden; */
 }
@@ -1319,7 +1322,7 @@ footer{
 
 
 /* Our Best Seller Section */
-.best-seller {
+/* .best-seller {
     position: relative;
     min-height: 90vh;
     min-width: 100%;
@@ -1395,10 +1398,10 @@ footer{
     pointer-events: none; 
     z-index: 10;
     background-color: var(--background-color); 
-}
+} */
 
 /* Apply fading effect using mask */
-.fade-left {
+/* .fade-left {
     left: 0;
     -webkit-mask-image: linear-gradient(to right, rgba(241, 237, 230), rgba(245, 234, 212, 0));
     mask-image: linear-gradient(to right, rgba(241, 237, 230), rgba(245, 234, 212, 0));
@@ -1541,7 +1544,7 @@ footer{
     padding-top: 10px;
     padding-bottom: 30px;
 }
-
+ */
 
 /* Ingredient section styling */
 .ingredient-section {
@@ -1619,13 +1622,13 @@ footer{
 }
 
 /* Specific background images */
-.Ingredient-card-1 { background-image: url("content-file/buxom-ingredient.webp"); }
+.Ingredient-card-1 { background-image: url("content-file/BerryHeader.jpg"); }
 .Ingredient-card-2 { background-image: url("content-file/buxom-ingredient2.webp");
-color: #521908; }
-.Ingredient-card-3 { background-image: url("content-file/buxom-ingredient3.webp"); }
+color: var(--primary-color); }
+.Ingredient-card-3 { background-image: url("content-file/bowl-with-dry-tea-and-green-leaves-on-wooden-table.webp"); }
 .Ingredient-card-4 { background-image: url("content-file/buxom-ingredient4.webp");
-color: #521908;}
-.Ingredient-card-5 { background-image: url("content-file/buxom-ingredient1.webp"); }
+color: var(--primary-color);}
+.Ingredient-card-5 { background-image: url("content-file/Goji_berry_480x480.webp"); }
 
 /* Second row of ingredients */
 .second-row {
@@ -2329,7 +2332,7 @@ color: #521908;}
     }
 
     .mission{
-        margin-top: 5rem;
+        margin-top: 4rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -2346,7 +2349,7 @@ color: #521908;}
     }
 
     #mission{
-        width: 45%;
+        width: 40%;
         height: 30rem;
         border-radius: 1rem;
     }
@@ -2368,9 +2371,9 @@ color: #521908;}
     }
 
     #vision{
-        width: 44%;
+        width: 40%;
         /* height: 37rem; */
-        height: 30rem;
+        height: 32rem;
         border-radius: 1rem;
     }
     
@@ -2392,7 +2395,7 @@ color: #521908;}
     }
     
     .founder .image{
-        width: 45%;
+        width: 37%;
     }
     
     .founder .image img{
@@ -2403,8 +2406,8 @@ color: #521908;}
     
     .founder .test{
         text-align: end;
-        width: 55%;
-        padding: 10rem 5rem 0 6rem;
+        width: 63%;
+        padding: 5rem 5rem 0 5rem;
         background-color: var(--secondary-color);
         background-image: url(images/signature.png);
         background-position-x: 95%;
@@ -2429,12 +2432,12 @@ color: #521908;}
     }
     
     .founder .test :first-child p{
-        width: 40%;
+        width: 26%;
         border-bottom: solid 3px var(--tex-color);
     }
     
     .founder .test h2{
-        font-size: 5rem;
+        font-size: 4.5rem;
         color: var(--tex-color);
     }
     
@@ -2493,7 +2496,7 @@ color: #521908;}
         box-shadow: 0 25px 50px rgba(228, 215, 215, 0.5);
         border-radius: 20px;
         border: dotted 2px var(--secondary-color);
-        /* background-color: var(--accent-color); */
+        /* background-color: var(--secondary-color); */
     }
 
     .slider .slides {
@@ -2752,13 +2755,13 @@ color: #521908;}
     }
     
     /* Specific background images */
-    .Ingredient-card-1 { background-image: url("./content-file/buxom-ingredient.webp"); }
+    .Ingredient-card-1 { background-image: url("./content-file/BerryHeader.jpg"); }
     .Ingredient-card-2 { background-image: url("./content-file/buxom-ingredient2.webp");
     color: #521908; }
-    .Ingredient-card-3 { background-image: url("./content-file/buxom-ingredient3.webp"); }
+    .Ingredient-card-3 { background-image: url("./content-file/bowl-with-dry-tea-and-green-leaves-on-wooden-table.webp"); }
     .Ingredient-card-4 { background-image: url("./content-file/buxom-ingredient4.webp");
     color: #521908;}
-    .Ingredient-card-5 { background-image: url("./content-file/buxom-ingredient1.webp"); }
+    .Ingredient-card-5 { background-image: url("./content-file/Goji_berry_480x480.webp"); }
     
     /* Second row of ingredients */
     .second-row {
