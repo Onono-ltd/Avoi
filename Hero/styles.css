@@ -2258,7 +2258,7 @@ color: var(--primary-color);}
     }
     
     .texts p{
-        font-size: 1.5rem;
+        font-size: 2rem;
         margin-top: 1rem;
     }
     
@@ -2344,7 +2344,7 @@ color: var(--primary-color);}
     }
 
     .mission div p{
-        font-size: 2rem;
+        font-size: 1.8rem;
         text-align: center;
     }
 
@@ -2366,7 +2366,7 @@ color: var(--primary-color);}
     }
 
     .vision div p{
-        font-size: 2rem;
+        font-size: 1.8rem;
         text-align: center;
     }
 
@@ -2553,7 +2553,7 @@ color: var(--primary-color);}
         background-size: cover;
     }
 
-    /* .slider .slides:nth-child(6) 
+    .slider .slides:nth-child(6) 
     {
         left: calc(50% + 1020px);
         background-size: cover;
@@ -2564,7 +2564,7 @@ color: var(--primary-color);}
         left: calc(50% + 1200px);
         background-size: cover;
         opacity: 0;
-    } */
+    }
     
     .buttons {
         position: absolute;
