@@ -56,3 +56,11 @@ window.scrollTo({
     behavior: 'smooth'
 });
 }
+
+
+const subscribe = document.querySelector('.subscribe');
+console.log(subscribe);
+
+subscribe.addEventListener("click", () => {
+    alert(`Subscription successful! \nYou will receive a reply via email`)
+})
