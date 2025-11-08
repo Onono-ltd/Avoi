@@ -161,7 +161,7 @@ body {
 
 .scale-in {
     transform: scale(0.8);
-    transition: opacity 1s ease-out, transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* little bounce */
+    transition: opacity 1s ease-out, transform 1s ease-in-out; /* little bounce */
 }
 
 .zoom-in {
@@ -734,7 +734,7 @@ footer{
     display: flex;
     width: 400%; /* 100% * number of slides */
     height: calc(100vh - 4.5rem); /* Adjust height for navbar */
-    transition: transform 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); /* Bounce effect */
+    transition: transform 0.8s ; /* Bounce effect */
 }
 
 .slide {
@@ -743,6 +743,7 @@ footer{
     height: 100%;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     color: var(--text-on-dark);
@@ -1850,7 +1851,7 @@ color: var(--primary-color);}
     display: flex;
     width: 400%; /* 100% * number of slides */
     height: calc(100vh - 50px); /* Adjust height for navbar */
-    transition: transform 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); /* Bounce effect */
+    transition: transform 0.8s ease-in-out; /* Bounce effect */
 }
 
 .slide {
@@ -1859,6 +1860,7 @@ color: var(--primary-color);}
     height: 100%;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     color: var(--text-on-dark);

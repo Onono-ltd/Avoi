@@ -12,43 +12,55 @@ pre.addEventListener('click', function(){
 })
 
 
-const slides = document.querySelectorAll('.carousel-slide');
+const sliderContainer = document.querySelector('.slider-container'); // ADD THIS
+const slides = document.querySelectorAll('.slide'); // Change to .slide (based on HTML)
+const dots = document.querySelectorAll('.dot'); // ADD THIS
+// NOTE: Your JS uses .carousel-slide, but your HTML uses .slide. I've corrected it to .slide.
+// Also, your JS is missing the element selection for the dots.
+
 const next = document.querySelector('.nex');
 const prev = document.querySelector('.pre');
 let current = 0;
+const totalSlides = slides.length; // Use slides.length (which is 5 in your current HTML)
 
 function showSlide(index) {
-slides.forEach((slide, i) => {
-    slide.classList.remove('active');
-    if (i === index) slide.classList.add('active');
-});
+    // Wrap around logic
+    index = (index + totalSlides) % totalSlides;
+    if (index < 0) {
+        index = totalSlides - 1;
+    }
+
+    // 1. Move the container (The actual sliding animation)
+    sliderContainer.style.transform = `translateX(-${index * 100}vw)`;
+
+    // 2. Update active class for content animations and dots
+    slides.forEach(slide => slide.classList.remove('active'));
+    slides[index].classList.add('active');
+
+    dots.forEach(dot => dot.classList.remove('active'));
+    // Make sure the dot elements exist before trying to access them
+    if (dots.length > index) {
+        dots[index].classList.add('active');
+    }
+
+    current = index;
 }
 
 next.addEventListener('click', () => {
-current = (current + 1) % slides.length;
-showSlide(current);
+    showSlide(current + 1);
 });
 
 prev.addEventListener('click', () => {
-current = (current - 1 + slides.length) % slides.length;
-showSlide(current);
+    showSlide(current - 1);
 });
 
 // Auto-slide every 7 seconds
 setInterval(() => {
-current = (current + 1) % slides.length;
-showSlide(current);
+    showSlide(current + 1);
 }, 7000);
 
-const scrollBtn = document.querySelector('.scroll-to-top');
-
-window.addEventListener('scroll', () => {
-if (window.scrollY > 300) {
-    scrollBtn.style.display = 'flex';
-} else {
-    scrollBtn.style.display = 'none';
-}
-});
+// Initialize the first slide on load (since the first slide already has the 'active' class in HTML)
+showSlide(current); 
 
 function scrollToTop() {
 window.scrollTo({
